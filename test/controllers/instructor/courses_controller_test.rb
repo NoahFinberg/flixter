@@ -42,13 +42,17 @@ class Instructor::CoursesControllerTest < ActionController::TestCase
   			:title => "Rails 101",
     		:description => "Intro to Ruby on Rails",
     		:cost => 0.0 
+
     	}
     }
   	end
 
-  	assert_redirected_to instructor_course_path(2)
+  	assert_redirected_to instructor_course_path(assigns(:course))
   	assert_equal 1, user.courses.count
   end
+
+
+
 
   #must be signed in to see course show page
   test "show page not signed in" do
