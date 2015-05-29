@@ -23,6 +23,8 @@ class Instructor::LessonsControllerTest < ActionController::TestCase
   	assert_response :success
   end
 
+
+
   #make sure can't create a new lesson if not signed in
   test "create not signed in" do
   	section = FactoryGirl.create(:section)
