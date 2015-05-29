@@ -18,4 +18,22 @@ class CoursesControllerTest < ActionController::TestCase
   	get :index
   	assert_response :success
   end
+
+  #must be signed in to see course show page
+  test "show page not signed in" do
+  	course = FactoryGirl.create(:course)
+  	get :show, :id => course.id
+  	assert_redirected_to new_user_session_path
+  end
+
+  #can see course show page if signed in
+  test "show page signed in" do
+  	user = FactoryGirl.create(:user)
+  	sign_in user
+
+  	course = FactoryGirl.create(:course)
+  	get :show, :id => course.id
+
+  	assert_response :success
+  end
 end
