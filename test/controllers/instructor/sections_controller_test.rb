@@ -40,13 +40,14 @@ class Instructor::SectionsControllerTest < ActionController::TestCase
   	user = FactoryGirl.create(:user)
   	sign_in user
   	course = FactoryGirl.create(:course)
+    section = FactoryGirl.create(:section)
 
   	assert_difference 'Section.count' do
   		post :create, :course_id => course.id, :section => { section }
   	end
 
   	assert_redirected_to instructor_course_path(assigns(:course))
-  	assert_equal 1, user.courses.count
+  	assert_equal 1, user.sections.count
   end
 
 end

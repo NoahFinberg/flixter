@@ -1,5 +1,12 @@
 FactoryGirl.define do  
 
+  factory :lesson do
+    title "Don't forget the server!"
+    subtitle "rails s"
+    association :section
+  end
+  
+
   factory :section do
     title "Welcome Aboard"
     association :course
