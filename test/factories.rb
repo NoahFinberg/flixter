@@ -1,4 +1,10 @@
-FactoryGirl.define do
+FactoryGirl.define do  
+
+  factory :section do
+    title "Welcome Aboard"
+    association :course
+  end
+
   factory :course do
     title "Rails 101"
     description "Intro to Ruby on Rails"
