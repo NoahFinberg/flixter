@@ -5,6 +5,8 @@ gem 'devise'
 
 gem 'simple_form'
 
+gem 'factory_girl_rails', '~> 4.0'
+
 # Bundle edge Rails instead: gem 'rails', github: 'rails/rails'
 gem 'rails', '4.0.1'
 
