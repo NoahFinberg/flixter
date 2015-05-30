@@ -15,6 +15,8 @@ gem 'fog', '~> 1.3.1'
 
 gem 'mini_magick'
 
+gem 'carrierwave-aws'
+
 # Bundle edge Rails instead: gem 'rails', github: 'rails/rails'
 gem 'rails', '4.0.1'
 
