@@ -7,6 +7,12 @@ gem 'simple_form'
 
 gem 'factory_girl_rails', '~> 4.0'
 
+gem 'carrierwave'
+
+gem 'figaro'
+
+gem 'fog', '~> 1.3.1'
+
 # Bundle edge Rails instead: gem 'rails', github: 'rails/rails'
 gem 'rails', '4.0.1'
 
