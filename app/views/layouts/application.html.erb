@@ -71,9 +71,38 @@
 
 	<div id="footer">
       <div class="container">
-      	<b>Teachers</b>
-      	<br />
-      	<%= link_to 'Teach a Course', new_instructor_course_path %>
+      	<div class="col-xs-12 col-sm-3">
+        <b>Teachers</b>
+        <br />
+        <%= link_to 'Teach a Course', new_instructor_course_path %>
+        <br />
+        <%= link_to 'My Dashboard', dashboard_path %>
+      </div>
+      <div class="col-xs-12 col-sm-3">
+        <b>About</b>
+        <br />
+        <%= link_to 'Team', '#' %>
+        <br />
+        <%= link_to 'Careers', '#' %>
+        <br />
+        <%= link_to 'Privacy Policy', '#' %>
+      </div>
+      <div class="col-xs-12 col-sm-3">
+        <b>Contact</b>
+        <br />
+        noahfinberg@gmail.com
+      </div>
+      <div class="col-xs-12 col-sm-3 social">
+        <b>Social</b>
+        <br />
+        <%= link_to 'http://github.com/noahfinberg' do %>
+          <%= image_tag 'github.png', :class => 'social-button' %>
+        <% end %>
+        <br />
+        <%= link_to 'https://www.linkedin.com/profile/view?id=257358260&trk=nav_responsive_tab_profile' do %>
+          <%= image_tag 'linked_in.png', :class => 'social-button' %>
+        <% end %>
+      </div>
       </div>
   	</div>
 
