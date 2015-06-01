@@ -23,6 +23,8 @@ gem 'ranked-model'
 
 gem 'jquery-ui-rails'
 
+gem 'rollbar', '~> 1.5.1'
+
 # Bundle edge Rails instead: gem 'rails', github: 'rails/rails'
 gem 'rails', '4.0.1'
 
